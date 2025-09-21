@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Back to Top</title>
+  <meta name="description" content="Scroll-to-top feature for better navigation." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom right, #fff0f0, #ffecec);
+  color: #333;
+  line-height: 1.6;
+  animation: fadeInBody 1s ease-in;
+}
+
+@keyframes fadeInBody {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+header, footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  animation: slideDown 0.8s ease-out;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+main {
+  padding: 2rem 1rem;
+  animation: fadeInMain 1.2s ease-in;
+}
+
+@keyframes fadeInMain {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.scroll-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  animation: fadeInSection 1s ease-in;
+}
+
+@keyframes fadeInSection {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.scroll-section h2 {
+  margin-bottom: 1rem;
+  color: #444;
+  animation: fadeInHeading 0.6s ease-in;
+}
+
+@keyframes fadeInHeading {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.scroll-section p {
+  margin-bottom: 2rem;
+  line-height: 1.7;
+  color: #555;
+  animation: fadeInText 0.8s ease-in;
+}
+
+@keyframes fadeInText {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.scroll-section button {
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-section button:hover {
+  background-color: #005fa3;
+  transform: scale(1.05);
+}
+
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: background 0.3s ease, transform 0.3s ease;
+  animation: fadeInFloat 1.2s ease-in;
+}
+
+.floating-button:hover {
+  background-color: #005fa3;
+  transform: scale(1.05);
+}
+
+@keyframes fadeInFloat {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li a {
+  display: inline-block;
+  color: #fff;
+  background-color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.nav-list li a:hover {
+  background-color: #005fa3;
+  transform: scale(1.05);
+}
+  </style>
+  <script>
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Smartphone Photography</h1>
+    <nav>
+    <ul class="nav-list">
+    <li><a href="index.html">🏠 Home</a></li>
+    <li><a href="gallery.html">🖼️ Gallery</a></li>
+    <li><a href="tips.html">📸 Tips</a></li>
+    <li><a href="gear.html">🧰 Gear</a></li>
+    <li><a href="faq.html">❓ FAQ</a></li>
+    <li><a href="contact.html">✉️ Contact</a></li>
+    <li><a href="map.html">🗺️ Map</a></li>
+    <li><a href="video.html">🎥 Video</a></li>
+    <li><a href="credits.html">🎓 Credits</a></li>
+    <li><a href="backtotop.html">🔝 Back to Top</a></li>
+  </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="scroll-section">
+      <h2>Easy Navigation</h2>
+      <p>Long pages can be hard to navigate, especially on mobile. This feature lets users scroll back to the top smoothly. It’s a small touch that improves user experience and accessibility. Try it out below. You can add this button to any page using JavaScript and CSS. It’s simple, effective, and user-friendly. Users appreciate thoughtful design, and this feature shows attention to detail. Whether you're browsing tips, galleries, or tutorials, quick navigation keeps things flowing. Consider placing this button in your footer or floating it on the side. It’s one of those subtle enhancements that make your site feel polished and professional. Give it a try and see how it improves usability.</p>
+      <button onclick="scrollToTop()">Back to Top</button>
+    </section>
+  </main>
+
+  <button class="floating-button" onclick="scrollToTop()">↑ Top</button>
+
+  <footer>&copy; 2025 Felicity's Photo Lab</footer>
+</body>
+</html>

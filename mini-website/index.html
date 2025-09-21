@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Smartphone Photography</title>
+  <meta name="description" content="Explore the art of smartphone photography with tips, gear, and galleries." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    body.home-page {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom right, #f4f4f4, #eaeaea);
+      color: #333;
+      line-height: 1.6;
+      animation: fadeInBody 1s ease-in;
+    }
+
+    @keyframes fadeInBody {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    header, footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      animation: slideDown 0.8s ease-out;
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #444;
+      border-radius: 4px;
+      transform: scale(1.05);
+    }
+
+    main {
+      padding: 2rem 1rem;
+      animation: fadeInMain 1.2s ease-in;
+    }
+
+    @keyframes fadeInMain {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      animation: fadeInHero 1s ease-in;
+    }
+
+    @keyframes fadeInHero {
+      from { opacity: 0; transform: scale(0.98); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .hero h2 {
+      font-size: 1.8rem;
+      color: #444;
+      margin-bottom: 1rem;
+      animation: fadeInHeading 0.6s ease-in;
+    }
+
+    @keyframes fadeInHeading {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1rem;
+      animation: fadeInText 1s ease-in;
+    }
+
+    @keyframes fadeInText {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero img {
+      margin-top: 2rem;
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .hero img:hover {
+      transform: scale(1.03);
+    }
+
+    .nav-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li a {
+  display: inline-block;
+  color: #fff;
+  background-color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.nav-list li a:hover {
+  background-color: #005fa3;
+  transform: scale(1.05);
+}
+  </style>
+</head>
+<body class="home-page">
+  <header>
+    <h1>Smartphone Photography</h1>
+    <nav>
+  <ul class="nav-list">
+    <li><a href="index.html">🏠 Home</a></li>
+    <li><a href="gallery.html">🖼️ Gallery</a></li>
+    <li><a href="tips.html">📸 Tips</a></li>
+    <li><a href="gear.html">🧰 Gear</a></li>
+    <li><a href="faq.html">❓ FAQ</a></li>
+    <li><a href="contact.html">✉️ Contact</a></li>
+    <li><a href="map.html">🗺️ Map</a></li>
+    <li><a href="video.html">🎥 Video</a></li>
+    <li><a href="credits.html">🎓 Credits</a></li>
+    <li><a href="backtotop.html">🔝 Back to Top</a></li>
+  </ul>
+</nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Welcome to Your Mobile Photography Journey</h2>
+      <p>Smartphone photography is more than a trend—it's a creative revolution. With powerful cameras in our pockets, we can capture stunning images anytime, anywhere. This site is your guide to mastering mobile photography. Whether you're shooting landscapes, portraits, or street scenes, your phone is a powerful tool. Explore tips, gear recommendations, galleries, and tutorials to elevate your skills. Photography is not just about equipment—it’s about vision, timing, and storytelling. With practice and curiosity, you’ll discover how to turn everyday scenes into compelling images. Let’s explore the art of mobile photography together and build a portfolio that reflects your unique perspective.</p>
+      <img src="https://i.pinimg.com/originals/81/7e/45/817e45f27db1458dc50273dd98c8adef.jpg" alt="Smartphone capturing a sunset" />
+    </section>
+  </main>
+
+  <footer>&copy; 2025 Felicity's Photo Lab</footer>
+</body>
+</html>

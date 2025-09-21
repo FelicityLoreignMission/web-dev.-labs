@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Video Tutorial</title>
+  <meta name="description" content="Watch a tutorial to improve your mobile photography skills." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom right, #f0e0ff, #f9f5ff);
+      color: #333;
+      line-height: 1.6;
+      animation: fadeInBody 1s ease-in;
+    }
+
+    @keyframes fadeInBody {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    header, footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      animation: slideDown 0.8s ease-out;
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #444;
+      border-radius: 4px;
+      transform: scale(1.05);
+    }
+
+    main {
+      padding: 2rem 1rem;
+      animation: fadeInMain 1.2s ease-in;
+    }
+
+    @keyframes fadeInMain {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    section {
+      background-color: #fff;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      animation: fadeInSection 1s ease-in;
+    }
+
+    @keyframes fadeInSection {
+      from { opacity: 0; transform: scale(0.98); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #222;
+      animation: fadeInHeading 0.6s ease-in;
+    }
+
+    @keyframes fadeInHeading {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 8px;
+      margin-top: 1rem;
+      animation: zoomInVideo 1s ease-in;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    @keyframes zoomInVideo {
+      from { transform: scale(0.95); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    .nav-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li a {
+  display: inline-block;
+  color: #fff;
+  background-color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.nav-list li a:hover {
+  background-color: #005fa3;
+  transform: scale(1.05);
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Smartphone Photography</h1>
+    <nav>
+  <ul class="nav-list">
+    <li><a href="index.html">🏠 Home</a></li>
+    <li><a href="gallery.html">🖼️ Gallery</a></li>
+    <li><a href="tips.html">📸 Tips</a></li>
+    <li><a href="gear.html">🧰 Gear</a></li>
+    <li><a href="faq.html">❓ FAQ</a></li>
+    <li><a href="contact.html">✉️ Contact</a></li>
+    <li><a href="map.html">🗺️ Map</a></li>
+    <li><a href="video.html">🎥 Video</a></li>
+    <li><a href="credits.html">🎓 Credits</a></li>
+    <li><a href="backtotop.html">🔝 Back to Top</a></li>
+  </ul>
+</nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Learn by Watching</h2>
+      <p>Video tutorials are a fantastic way to learn photography techniques. This featured video walks you through framing, exposure, and editing basics for smartphone users. You’ll see how to compose shots using the rule of thirds, adjust lighting, and enhance images with apps. Video guides offer visual examples that are easy to follow. Pause, rewind, and practice along. Try replicating the techniques shown and compare your results. Learning by doing is the fastest way to improve. Don’t just watch—apply what you learn. Tutorials also introduce new ideas and styles you might not have considered. Stay curious and keep exploring. The more you engage with different formats, the more versatile your skills become. Let this video be a stepping stone to your next creative breakthrough.</p>
+      
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/_ZYGsx1i5L8?si=we9YsYGtwfcagBev"
+          title="Smartphone Photography Tutorial"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>&copy; 2025 Felicity's Photo Lab</footer>
+</body>
+</html>

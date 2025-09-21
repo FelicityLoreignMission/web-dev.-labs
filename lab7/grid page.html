@@ -1,0 +1,29 @@
+<!-- box-style.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Boxes</title>
+  <style>
+    .grid-layout {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 20px;
+    }
+    .content-box {
+      border: 2px solid #e74c3c;
+      padding: 20px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-layout">
+    <div class="content-box">Box A</div>
+    <div class="content-box">Box B</div>
+    <div class="content-box">Box C</div>
+  </div>
+</body>
+</html>

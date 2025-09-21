@@ -1,0 +1,65 @@
+.home-page h1,
+.gallery-page h1,
+.tips-page h1 {
+  animation: pulseHeading 1.5s ease-in-out;
+}
+
+@keyframes pulseHeading {
+  0% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.9; }
+}
+
+.home-page {
+  background: linear-gradient(to bottom right, #f4f4f4, #eaeaea);
+}
+
+.gallery-page {
+  background: linear-gradient(to bottom right, #ffe0e0, #fff5f5);
+}
+
+.tips-page {
+  background: linear-gradient(to bottom right, #e0f7fa, #f0ffff);
+}
+
+.gear-page {
+  background: linear-gradient(to bottom right, #f3f0ff, #eae6ff);
+}
+
+.faq-page {
+  background: linear-gradient(to bottom right, #fffbe0, #fef9c3);
+}
+
+.contact-page {
+  background: linear-gradient(to bottom right, #e0ffe0, #f5fff5);
+}
+
+.map-page {
+  background: linear-gradient(to bottom right, #e0f0ff, #f5faff);
+}
+
+.video-page {
+  background: linear-gradient(to bottom right, #f0e0ff, #f9f5ff);
+}
+
+.credits-page {
+  background: linear-gradient(to bottom right, #f0f0f0, #dcdcdc);
+}
+
+.backtotop-page {
+  background: linear-gradient(to bottom right, #fff0f0, #ffecec);
+}
+
+
+.home-page,
+.gallery-page,
+.tips-page,
+.gear-page,
+.faq-page,
+.contact-page,
+.map-page,
+.video-page,
+.credits-page,
+.backtotop-page {
+  animation: fadeInBody 1s ease-in;
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact</title>
+  <meta name="description" content="Reach out with questions or feedback about photography." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom right, #e0ffe0, #f5fff5);
+      color: #333;
+      line-height: 1.6;
+      animation: fadeInBody 1s ease-in;
+    }
+
+    @keyframes fadeInBody {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    header, footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      animation: slideDown 0.8s ease-out;
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    main {
+      padding: 2rem 1rem;
+      animation: fadeInMain 1.2s ease-in;
+    }
+
+    @keyframes fadeInMain {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      animation: fadeInSection 1s ease-in;
+    }
+
+    @keyframes fadeInSection {
+      from { opacity: 0; transform: scale(0.98); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #444;
+      animation: fadeInHeading 0.6s ease-in;
+    }
+
+    @keyframes fadeInHeading {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    p {
+      text-align: center;
+      margin-bottom: 2rem;
+      line-height: 1.7;
+      animation: fadeInText 0.8s ease-in;
+    }
+
+    @keyframes fadeInText {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      animation: fadeInForm 1s ease-in;
+    }
+
+    @keyframes fadeInForm {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 0.3rem;
+    }
+
+    input, textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    button {
+      background-color: #0077cc;
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.3s ease;
+      align-self: flex-start;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+      transform: scale(1.05);
+    }
+
+    .nav-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li a {
+  display: inline-block;
+  color: #fff;
+  background-color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.nav-list li a:hover {
+  background-color: #005fa3;
+  transform: scale(1.05);
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contact</h1>
+    <nav>
+  <ul class="nav-list">
+    <li><a href="index.html">🏠 Home</a></li>
+    <li><a href="gallery.html">🖼️ Gallery</a></li>
+    <li><a href="tips.html">📸 Tips</a></li>
+    <li><a href="gear.html">🧰 Gear</a></li>
+    <li><a href="faq.html">❓ FAQ</a></li>
+    <li><a href="contact.html">✉️ Contact</a></li>
+    <li><a href="map.html">🗺️ Map</a></li>
+    <li><a href="video.html">🎥 Video</a></li>
+    <li><a href="credits.html">🎓 Credits</a></li>
+    <li><a href="backtotop.html">🔝 Back to Top</a></li>
+  </ul>
+</nav>
+  </header>
+  <main>
+    <section>
+      <h2>Let’s Connect</h2>
+      <p>Have questions, feedback, or want to share your work? I’d love to hear from you. Use the form below to get in touch. Whether you’re a beginner seeking advice or a fellow enthusiast looking to collaborate, this space is open to all. Photography is a community, and connection fuels creativity. Your message matters, and I’ll do my best to respond promptly. Feel free to ask about gear, techniques, or share your favorite shots. Let’s build a network of mobile photographers who support and inspire each other. Together, we can learn, grow, and create. Don’t hesitate—reach out and let’s start a conversation.</p>
+      <form>
+        <label for="name">Name:<br>
+          <input type="text" id="name" name="name" required />
+        </label><br>
+        <label for="email">Email:<br>
+          <input type="email" id="email" name="email" required />
+        </label><br>
+        <label for="message">Message:<br>
+          <textarea id="message" name="message" required></textarea>
+        </label><br>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+  <footer>&copy; 2025 Felicity's Photo Lab</footer>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gallery</title>
+  <meta name="description" content="Explore a curated gallery of smartphone photography." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    body.gallery-page {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom right, #ffe0e0, #fff5f5);
+      color: #333;
+      line-height: 1.6;
+      animation: fadeInBody 1s ease-in;
+    }
+
+    @keyframes fadeInBody {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    header, footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      animation: slideDown 0.8s ease-out;
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #444;
+      border-radius: 4px;
+      transform: scale(1.05);
+    }
+
+    main {
+      padding: 2rem 1rem;
+      animation: fadeInMain 1.2s ease-in;
+    }
+
+    @keyframes fadeInMain {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .gallery-section {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      animation: fadeInSection 1s ease-in;
+    }
+
+    @keyframes fadeInSection {
+      from { opacity: 0; transform: scale(0.98); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .gallery-section h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #444;
+      animation: fadeInHeading 0.6s ease-in;
+    }
+
+    @keyframes fadeInHeading {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .gallery-section p {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      animation: fadeInText 0.8s ease-in;
+    }
+
+    @keyframes fadeInText {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeInImage 0.6s ease-in;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    @keyframes fadeInImage {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .nav-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li a {
+  display: inline-block;
+  color: #fff;
+  background-color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.nav-list li a:hover {
+  background-color: #005fa3;
+  transform: scale(1.05);
+}
+  </style>
+</head>
+<body class="gallery-page">
+  <header>
+    <h1>Smartphone Photography</h1>
+    <nav>
+  <ul class="nav-list">
+    <li><a href="index.html">🏠 Home</a></li>
+    <li><a href="gallery.html">🖼️ Gallery</a></li>
+    <li><a href="tips.html">📸 Tips</a></li>
+    <li><a href="gear.html">🧰 Gear</a></li>
+    <li><a href="faq.html">❓ FAQ</a></li>
+    <li><a href="contact.html">✉️ Contact</a></li>
+    <li><a href="map.html">🗺️ Map</a></li>
+    <li><a href="video.html">🎥 Video</a></li>
+    <li><a href="credits.html">🎓 Credits</a></li>
+    <li><a href="backtotop.html">🔝 Back to Top</a></li>
+  </ul>
+</nav>
+  </header>
+
+  <main>
+    <section class="gallery-section">
+      <h2>Photo Showcase</h2>
+      <p>Welcome to the gallery—a visual celebration of smartphone photography. Each image here was captured using a mobile device, proving that creativity matters more than gear. From vibrant cityscapes to quiet nature scenes, these photos highlight the power of composition, lighting, and timing. Notice how reflections, shadows, and textures add depth. Smartphone cameras today rival traditional ones in clarity and versatility. As you browse, think about how you might recreate similar shots. Try experimenting with angles, symmetry, and color. Photography is a visual language, and your phone is the pen. Let this gallery inspire your next shoot and remind you that great art can come from simple tools.</p>
+
+      <div class="gallery-grid">
+        <img src="https://www.civitatis.com/blog/wp-content/uploads/2022/07/portada-atardecer-nueva-york-1920x1280.jpg" alt="Sunset over city skyline" />
+        <img src="https://images.fineartamerica.com/images-medium-large/purple-flower-morning-dew-joseph-halasz.jpg" alt="Close-up of a flower with morning dew" />
+        <img src="https://images.pexels.com/photos/5355539/pexels-photo-5355539.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Street scene with dramatic shadows" />
+        <img src="https://cdn.pixabay.com/photo/2018/12/12/17/12/tree-3871225_960_720.jpg" alt="Reflection of trees in a lake" />
+        <img src="https://www.photojaanic.com/blog/wp-content/uploads/sites/2/2018/08/natural-light-photography-tips-for-beginners-Photojaanic-110.jpg" alt="Portrait with natural light" />
+        <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/colorful-market-prasad-a.jpg" alt="Colorful market captured from above" />
+      </div>
+    </section>
+  </main>
+
+  <footer>&copy; 2025 Felicity's Photo Lab</footer>
+</body>
+</html>
