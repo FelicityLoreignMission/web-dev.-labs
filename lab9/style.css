@@ -1,4 +1,4 @@
-/* General Reset & Typography */
+
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #fdfdfd;
@@ -7,13 +7,13 @@ body {
   padding-top: 60px;
 }
 
-/* Headings */
+
 h1, h2, h3, h4 {
   font-weight: 600;
   color: #2c3e50;
 }
 
-/* Buttons */
+
 .btn {
   transition: all 0.3s ease-in-out;
   border-radius: 6px;
@@ -24,13 +24,13 @@ h1, h2, h3, h4 {
   opacity: 0.9;
 }
 
-/* Alerts */
+
 .alert {
   border-left: 5px solid #333;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-/* Cards */
+
 .card {
   transition: transform 0.3s ease;
   border-radius: 10px;
@@ -47,7 +47,7 @@ h1, h2, h3, h4 {
   color: #34495e;
 }
 
-/* Form Styling */
+
 input, textarea {
   border-radius: 5px;
   border: 1px solid #ccc;
@@ -59,7 +59,7 @@ input:focus, textarea:focus {
   box-shadow: 0 0 5px rgba(0,123,255,0.5);
 }
 
-/* Navbar */
+
 .navbar {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -70,7 +70,7 @@ input:focus, textarea:focus {
   color: #007bff;
 }
 
-/* Utility Classes */
+
 .box {
   background-color: #eaf2f8;
   border: 1px solid #aed6f1;
@@ -79,7 +79,7 @@ input:focus, textarea:focus {
   border-radius: 8px;
 }
 
-/* Responsive tweaks */
+
 @media (max-width: 768px) {
   .card-title {
     font-size: 1.1rem;

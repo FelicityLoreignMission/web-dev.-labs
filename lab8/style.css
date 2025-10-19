@@ -1,0 +1,125 @@
+/* ========== Base Styles ========== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ========== Flexbox Layout (Activity 1 & 5) ========== */
+.container,
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.box,
+.text,
+.image {
+  background-color: #f2a154;
+  padding: 2rem;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  border-radius: 8px;
+}
+
+/* Two-column layout image section */
+.image img {
+  border-radius: 8px;
+}
+
+/* ========== Grid Gallery (Activity 4) ========== */
+.gallery {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.item {
+  background-color: #ffb703;
+  padding: 2rem;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  border-radius: 8px;
+}
+
+/* ========== Café Menu Grid (Activity 7) ========== */
+.menu-grid {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.menu-grid .item {
+  background-color: #8ecae6;
+  padding: 2rem;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+/* ========== Media Queries ========== */
+
+/* Flexbox: Horizontal layout for wider screens */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+/* Two-column layout side-by-side */
+@media (min-width: 960px) {
+  .flex-container {
+    flex-direction: row;
+  }
+}
+
+/* Gallery: 4 columns on wide screens */
+@media (min-width: 960px) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Gallery: 3 columns on tablets */
+@media (min-width: 768px) and (max-width: 959px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Gallery: 2 columns on mobile */
+@media (max-width: 767px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Café Menu: 3 columns on wide screens */
+@media (min-width: 960px) {
+  .menu-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Café Menu: 1 column on smaller screens */
+@media (max-width: 959px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+}
